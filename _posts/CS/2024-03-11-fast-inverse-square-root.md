@@ -2,7 +2,7 @@
 title: Fast inverse square root
 categories: [CS]
 tags: [algorithm]
-image: /assets/img/previews/inverse_square_root.png
+image: /assets/img/previews/resized/inverse_square_root.png
 math: true
 ---
 
