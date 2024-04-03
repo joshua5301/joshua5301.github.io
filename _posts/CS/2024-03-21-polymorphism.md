@@ -137,7 +137,7 @@ class는 객체의 implementation에 집중하고, inheritance는 구현의 공�
 또한 굳이 클래스가 아니더라도 primitive 데이터타입들 간에 subtype 관계가 있을 수 있다. Julia는 이를 명시적으로 보여주는 언어이다.
 
 * **A가 B를 상속한다 해도 A가 B의 subtype이 아닐 수도 있다.**  
-A가 B의 메소드 전체를 상속받지 않거나 일부 메소드의 인터페이스를 다형성이 깨지도록 override하면 subtype 관계가 아니게 된다.  
+A가 B의 메소드 전체를 상속받지 않거나 일부 메소드의 parameter 혹은 return type를 다형성이 깨지도록 override하면 subtype 관계가 아니게 된다.  
 예를 들어, C++의 private 상속은 superclass의 공개 메소드를 숨기므로 subtyping이 일어나지 않는다. Eiffel이나 Dart의 경우에는 메소드 override 시 parameter를 더 '자세한' type으로 변경이 가능하게끔 한다. 따라서 subtype 관계가 형성되지 않고, 만약 그래도 다형성을 보장한다면 type safe하지 않게 된다.
  
 따라서 둘은 서로 독립적인 개념이다.
