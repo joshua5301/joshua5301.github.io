@@ -134,7 +134,8 @@ poster_handles = defaultdict(open_picture)
 handle = poster_handles['path/to/poster']
 ~~~
 
-하지만 이 역시도 문제가 있다. defaultdict의 default 값을 생성해 주는 팩토리는 인자를 받지 않는다는 것이다.
+defaultdict으로 쉽게 구현할 수 있는 것 처럼 보이지만 위 예시는 실행될 수 없다. defaultdict의 default 값을 생성해 주는 팩토리는 인자를 받지 않는다는 것이다.
+
 이처럼 default 값을 생성할 때 key에 의존해야 하는 경우에는 dict를 상속받고 \_\_missing__ 매직 메소드를 구현하자.
 
 ~~~python
