@@ -2,7 +2,7 @@
 title: 왈러스 연산자
 categories: ['Python']
 tags: ['Python']
-image: /assets/img/previews/resized/walrus.png
+image: /assets/img/previews/resized/python.png
 math: true
 ---
 > Effective Python의 Better way 10을 정리한 내용입니다.
