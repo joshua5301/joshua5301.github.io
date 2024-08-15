@@ -19,11 +19,11 @@ def resize_image(image_path: str, output_path: str, target_ratio: float, backgro
     image = Image.open(image_path)
     image = image.convert('RGBA')
     width, height = image.size
-    target_width = int(height * target_ratio)
-    target_height = height
+    target_width = max(width, int(height * target_ratio))
+    target_height = max(height, int(width * (1 / target_ratio)))
     new_image = Image.new('RGBA', (target_width, target_height), background_color)
     paste_x = int((target_width - width) / 2)
-    paste_y = 0
+    paste_y = int((target_height - height) / 2)
     new_image.paste(image, (paste_x, paste_y), mask=image.split()[3])
     new_image.save(output_path, 'png')
 
