@@ -9,6 +9,7 @@ math: true
 ## Sigmoid
 ---
 ![sigmoid](/assets/img/contents/activation/sigmoid.png){: width="250px"}
+_(그림 1) sigmoid function_ 
 
 #### 단점 1: 레이어를 깊이 쌓을 시, gradient vanishing 문제가 발생할 수 있다.
 
@@ -21,10 +22,12 @@ Sigmoid 함수의 출력값은 항상 양수(0에서 1 사이)이다. 따라서 
 아래 그림을 보면 퍼셉트론 내 가중치 부호가 모두 동일하다는 한계 때문에 지그재그하게 업데이트하고 있음을 알 수 있다.
 
 ![zigzag](/assets/img/contents/activation/zigzag.png){: width="250px"}
+_(그림 2) zigzag하게 움직이는 weight_ 
 
 ## Tanh
 ---
 ![tanh](/assets/img/contents/activation/tanh.png){: width="250px"}
+_(그림 3) tanh function_ 
 
 #### 장점 1: Zero-centered 되어있다.
 
@@ -37,6 +40,7 @@ Sigmoid 함수와는 달리, 출력 범위가 -1에서 1까지로, 0을 중심�
 ## Relu
 ---
 ![relu](/assets/img/contents/activation/relu.png){: width="250px"}
+_(그림 4) ReLU function_ 
 
 #### 장점 1: 계산 속도가 빠르다.
 
